@@ -162,8 +162,17 @@ uiautomatorviewer
 2. Run test with compiler or execute commands on Visual Code terminal.
 
 ```bash
-robot -d .logs home.robot
+robot -d ./logs home.robot
 ```
+
+```bash
+robot -d ./logs navigation.robot
+```
+
+
+
+
+
 3. Access on project '.logs/report.html' and open Chrome browser to see results.
 
 
