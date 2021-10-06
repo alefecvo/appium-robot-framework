@@ -3,30 +3,43 @@
 Library           AppiumLibrary
 
 
-***Keywords***
+*** Variables ***
+#ANDROID
+${BASE_URL}            http://localhost:4723/wd/hub
+${AUTOMATION_NAME}     uiautomator2   
+${PLATAFORM_NAME}      Android
+${DEVICE_NAME}         android-device-test
+${APP}                 ${EXECDIR}/app/twp.apk
+${UDID}                emulator-5554
 
+# ${START_BUTTON}        COMEÇAR
+# ${MENU_BUTTON}         xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]
+# ${NAV_VIEWER}          id=io.qaninja.android.twp:id/navView
+${TIMEOUT}             5
+
+***Keywords***
 # Open session appium
 Open Session
-    Set Appium Timeout    5
-        Open Application    http://localhost:4723/wd/hub
-        ...                 automationName=uiautomator2
-        ...                 platformName=Android
-        ...                 deviceName=android-device-test
-        ...                 app=${EXECDIR}/app/twp.apk
-        ...                 udid=emulator-5554
+    Set Appium Timeout    ${TIMEOUT} 
+        Open Application    ${BASE_URL} 
+        ...                 automationName=${AUTOMATION_NAME}
+        ...                 platformName=${PLATAFORM_NAME}
+        ...                 deviceName=${DEVICE_NAME}
+        ...                 app=${APP}
+        ...                 udid=${UDID}
 
 # Close session appium
 Close Session
     Close Application
 
-# Open first screen
-Get Started
-    Wait Until Page Contains            COMEÇAR
-    Click Text                          COMEÇAR
+# # Open first screen
+# Get Started
+#     Wait Until Page Contains            ${START_BUTTON}
+#     Click Text                          ${START_BUTTON}
 
-# Open menu bar
-Open Navigation
-    Wait Until Element Is Visible       xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]
-    Click Element                       xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]
+# # Open menu bar
+# Open Navigation
+#     Wait Until Element Is Visible       ${MENU_BUTTON}
+#     Click Element                       ${MENU_BUTTON}
     
-    Wait Until Element Is Visible       id=io.qaninja.android.twp:id/navView
+#     Wait Until Element Is Visible       ${NAV_VIEWER}
