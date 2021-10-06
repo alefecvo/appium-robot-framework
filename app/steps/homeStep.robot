@@ -1,5 +1,5 @@
 ***Settings***
-Resource          ../pages/introPage.robot 
+Resource          ../pages/introPage.robot
 Resource          ../pages/homePage.robot 
 
 ***Keywords***

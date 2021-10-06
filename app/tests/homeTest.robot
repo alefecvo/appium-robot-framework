@@ -1,24 +1,24 @@
 ***Settings***
 
-Resource          ../resources/base.robot
-Resource          ../steps/homeStep.robot 
+Resource          ../../app/base/base.robot
+Resource          ../../app/steps/homeStep.robot 
 
 Test Setup        Open Session
 Test Teardown     Close Session
 
 
 ***Test Cases***
-Validar acessar tela Dialogs
+Deve acessar tela Dialogs com sucesso
   Dado que acesso a tela inicial
   Quando aciono opção menu Dialogs
   Então é exibido a tela Dialogs  
 
-Validar acessar tela Forms
+Deve acessar tela Forms com sucesso
   Dado que acesso a tela inicial
   Quando aciono opção menu Forms
   Então é exibido a tela Forms
 
-Validar acessar tela Avengers
+Deve acessar tela Avengers com sucesso
   Dado que acesso a tela inicial
   Quando aciono opção menu Avengers
   Então é exibido a tela Avengers

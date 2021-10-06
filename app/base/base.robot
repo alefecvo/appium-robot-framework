@@ -2,20 +2,19 @@
 
 Library           AppiumLibrary
 
-
 *** Variables ***
 #ANDROID
 ${BASE_URL}            http://localhost:4723/wd/hub
 ${AUTOMATION_NAME}     uiautomator2   
 ${PLATAFORM_NAME}      Android
 ${DEVICE_NAME}         android-device-test
-${APP}                 ${EXECDIR}/app/twp.apk
+${APP}                 ${EXECDIR}/resources/android/twp.apk
 ${UDID}                emulator-5554
 
 # ${START_BUTTON}        COMEÇAR
 # ${MENU_BUTTON}         xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]
 # ${NAV_VIEWER}          id=io.qaninja.android.twp:id/navView
-${TIMEOUT}             5
+${TIMEOUT}             10
 
 ***Keywords***
 # Open session appium

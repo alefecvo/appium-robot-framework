@@ -162,13 +162,16 @@ uiautomatorviewer
 2. Run test with compiler or execute commands on Visual Code terminal.
 
 ```bash
-robot -d ./logs tests/home.robot
+robot -d ./logs app/tests/introTest.robot
 ```
 
 ```bash
-robot -d ./logs tests/navigation.robot
+robot -d ./logs app/tests/homeTest.robot
 ```
 
+```bash
+robot -d ./logs app/tests/loginTest.robot
+```
 
 
 
