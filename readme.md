@@ -8,8 +8,8 @@ This project is used to automation test using Appium with Robot Framework.
 #### Install the items
 
 1. Visual Code + extension - Robot Framework Language Server
-3. Java Development Kit 8 (1.8.0_281)
-4. Python 3
+3. Java Development Kit 8 or 11
+4. Python 3 or superior
 5. Android Studio
 6. Appium Desktop 1.20.0
 9. Node.js
@@ -173,6 +173,13 @@ robot -d ./logs app/tests/homeTest.robot
 robot -d ./logs app/tests/loginTest.robot
 ```
 
+```bash
+robot -d ./logs app/tests/radioTest.robot
+```
+
+```bash
+robot -d ./logs app/tests/checkboxTest.robot
+```
 
 
 

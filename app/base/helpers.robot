@@ -3,19 +3,24 @@
 Library           AppiumLibrary
 
 *** Variables ***
-${START_BUTTON}           COMEÇAR
-${MENU_BUTTON}            xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]
-${NAV_VIEWER}             id=io.qaninja.android.twp:id/navView
+${START_BUTTON}               COMEÇAR
+${MENU_BUTTON}                xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]
+${NAV_VIEWER}                 id=io.qaninja.android.twp:id/navView
 
-${TOOLBAR_TILE}           id=io.qaninja.android.twp:id/toolbarTitle
+${TOOLBAR_TILE}               id=io.qaninja.android.twp:id/toolbarTitle
 
-${FORMS_TEXT}             FORMS
-${LOGIN_TEXT}             LOGIN
-${TITULO_LOGIN_TEXT}      Fala QA, vamos testar o login?
+${FORMS_TEXT}                 FORMS
 
-${INPUTS_TEXT}            INPUTS
-${RADIO_BUTTON_TEXT}      BOTÕES DE RADIO
-${TITULO_RADIO_BUTTON}    Escolha sua linguagem preferida
+${LOGIN_TEXT}                 LOGIN
+${TITULO_LOGIN_TEXT}          Fala QA, vamos testar o login?
+
+${INPUTS_TEXT}                INPUTS
+
+${RADIO_BUTTON_TEXT}          BOTÕES DE RADIO
+${TITULO_RADIO_BUTTON}        Escolha sua linguagem preferida
+
+${CHECKBOX_TEXT}              CHECKBOX
+${TITULO_CHECKBOX_BUTTON}     Marque as techs que usam Appium
 
 ***Keywords***
 Get Started
@@ -44,3 +49,11 @@ Go To Radion Buttons
     Wait Until Page Contains            ${INPUTS_TEXT} 
     Click Text                          ${RADIO_BUTTON_TEXT} 
     Wait Until Page Contains            ${TITULO_RADIO_BUTTON}
+
+Go To Checkbox Buttons
+    Get Started
+    Open Navigation 
+    Click Text                          ${INPUTS_TEXT} 
+    Wait Until Page Contains            ${INPUTS_TEXT} 
+    Click Text                          ${CHECKBOX_TEXT} 
+    Wait Until Page Contains            ${TITULO_CHECKBOX_BUTTON}
