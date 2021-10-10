@@ -1,24 +1,15 @@
 ***Settings***
 
 Library           AppiumLibrary
+Resource          ../../app/base/helpers.robot
 
 *** Variables ***
-${MENU_BUTTON}         xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]
-${NAV_VIEWER}          id=io.qaninja.android.twp:id/navView
-
 ${TOOLBAR_TILE}          id=io.qaninja.android.twp:id/toolbarTitle
 ${DIALOGS_TEXT}          DIALOGS
 ${FORMS_TEXT}            FORMS
 ${AVENGERS_TEXT}         AVENGERS
 
 ***Keywords***
-# Open menu bar
-Open Navigation
-    Wait Until Element Is Visible       ${MENU_BUTTON}
-    Click Element                       ${MENU_BUTTON}
-    Wait Until Element Is Visible       ${NAV_VIEWER}
-
-
 Click Menu Option Dialogs
     Open Navigation
     Click Text                          ${DIALOGS_TEXT}

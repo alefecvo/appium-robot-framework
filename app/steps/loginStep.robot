@@ -1,8 +1,8 @@
 *** Settings ***
 
-Resource          ../pages/introPage.robot
 Resource          ../pages/homePage.robot 
 Resource          ../pages/loginPage.robot 
+Resource          ../../app/base/helpers.robot
 
 ***Keywords***
 Dado que acesso a tela home
@@ -16,10 +16,8 @@ Então será exibido a tela Login
     Check Screen Login
 
 Dado que acesso a tela login
-    Get Started
-    Click Menu Option Forms
-    Check Screen Forms
-    Click Button Login 
+    Go To Login Form
+
 Quando informar as credencias de email e senha
     Check Screen Login
     Input Text Email

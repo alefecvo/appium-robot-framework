@@ -1,6 +1,6 @@
 ***Settings***
-Resource          ../pages/introPage.robot
 Resource          ../pages/homePage.robot 
+Resource          ../../app/base/helpers.robot
 
 ***Keywords***
 Dado que acesso a tela inicial
