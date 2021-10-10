@@ -1,7 +1,9 @@
 ***Settings***
 
 Library           AppiumLibrary
+
 Resource          helpers.robot
+
 
 *** Variables ***
 #ANDROID

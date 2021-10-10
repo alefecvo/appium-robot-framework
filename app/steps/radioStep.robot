@@ -8,8 +8,8 @@ Dado que acesso a tela Radio Button
     Go To Radion Buttons
 
 Quando seleciono a opção Python
-    Click in radio button Python
+    Click In Radio Button Python
 
 Então tenho como resposta a opção marcada
-    Check radio button selected
+    Check Radio Selected Button 
 

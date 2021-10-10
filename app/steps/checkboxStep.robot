@@ -8,8 +8,8 @@ Dado que acesso a tela Checbox Button
     Go To Checkbox Buttons
 
 Quando seleciono a opção Robot Framework
-    Click in checkbox button Robot Framework
+    Click In Checkbox Robot Framework Button
 
 Então tenho como resposta a opção marcada
-    Check checkbox button selected
+    Check Checkbox Selected Button 
 

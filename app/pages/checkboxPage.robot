@@ -8,9 +8,9 @@ ${RESECURE_VIEW}         id=io.qaninja.android.twp:id/rvContainer
 
 
 *** Keywords ***
-Click in checkbox button Robot Framework
+Click In Checkbox Robot Framework Button
     Click Element        ${OPTION_CHECKBOX}
 
-Check checkbox button selected
+Check Checkbox Selected Button
     Wait Until Element Is Visible        ${RESECURE_VIEW}
     Element Attribute Should Match       ${OPTION_CHECKBOX}    checked    true    

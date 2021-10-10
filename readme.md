@@ -181,9 +181,22 @@ robot -d ./logs app/tests/radioTest.robot
 robot -d ./logs app/tests/checkboxTest.robot
 ```
 
+```bash
+robot -d ./logs -i long  app/tests/buttonTest.robot
+```
+
+3. Run test with tags ("i" to include and "e" to exclude)
+
+```bash
+robot -d ./logs -i long  app/tests/buttonTest.robot
+```
+
+```bash
+robot -d ./logs -e long  app/tests/buttonTest.robot
+```
 
 
-3. Access on project '.logs/report.html' and open Chrome browser to see results.
+4. Access on project '.logs/report.html' and open Chrome browser to see results.
 
 
 ---

@@ -13,6 +13,8 @@ ${SENHA_INPUT}            id=io.qaninja.android.twp:id/etPassword
 
 ${ENTRAR_BUTTON}          id=io.qaninja.android.twp:id/btnSubmit
 
+${MESSAGE_TEXT}           Show! Suas credenciais são validas. 
+
 ***Keywords***
 Click Button Login
     Wait Until Page Contains    ${FORMS_TEXT} 
@@ -20,16 +22,16 @@ Click Button Login
     Click Text                  ${LOGIN_TEXT}            
 
 Check Screen Login
-   Wait Until Page Contains       ${TITULO_LOGIN_TEXT} 
+   Wait Until Page Contains         ${TITULO_LOGIN_TEXT} 
    
 Input Text Email
-    Input Text                    ${EMAIL_INPUT}    eu@papito.io  
+    Input Text                      ${EMAIL_INPUT}    eu@papito.io  
 
 Input Text Senha
-    Input Text                    ${SENHA_INPUT}    qaninja            
+    Input Text                      ${SENHA_INPUT}    qaninja            
 
 Click Button Entrar
-    Click Element                 ${ENTRAR_BUTTON}
+    Click Element                   ${ENTRAR_BUTTON}
 
 Check Screen Text
-    Wait Until Page Contains    Show! Suas credenciais são validas.
+    Wait Until Page Contains        ${MESSAGE_TEXT}
