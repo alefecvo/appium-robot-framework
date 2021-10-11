@@ -9,6 +9,7 @@ ${NAV_VIEWER}                         id=io.qaninja.android.twp:id/navView
 
 ${TOOLBAR_TILE}                       id=io.qaninja.android.twp:id/toolbarTitle
 
+${AVENGERS_TEXT}                      AVENGERS
 ${FORMS_TEXT}                         FORMS
 
 ${LOGIN_TEXT}                         LOGIN
@@ -31,6 +32,10 @@ ${TITLE_SHORT_CLICK_BUTTON}           Botão clique simples
 ${LONG_CLICK_BUTTON}                  CLIQUE LONGO
 ${TITLE_LONG_CLICK_BUTTON}            Botão clique longo
 
+${CADASTRO_TEXT}                      CADASTRO
+${TITULO_CADASTRO_TEXT}               Bem-vindo, crie sua conta.
+
+${LISTA_AVENGERS_TEXT}                LISTA
 
 ***Keywords***
 Get Started
@@ -83,3 +88,25 @@ Go To Long Click Button
     Wait Until Page Contains            ${BUTTONS_TEXT} 
     Click Text                          ${LONG_CLICK_BUTTON} 
     Wait Until Page Contains            ${TITLE_LONG_CLICK_BUTTON}         
+
+Go To Register Form with Spinner
+    Get Started
+    Open Navigation
+    Click Text                          ${FORMS_TEXT}
+    Wait Until Element Is Visible       ${TOOLBAR_TILE} 
+    Element Text Should Be              ${TOOLBAR_TILE}    ${FORMS_TEXT}  
+    Wait Until Page Contains            ${FORMS_TEXT} 
+    Wait Until Page Contains            ${CADASTRO_TEXT}    
+    Click Text                          ${CADASTRO_TEXT} 
+    Wait Until Page Contains            ${TITULO_CADASTRO_TEXT}
+
+Go To Swipe List
+    Get Started
+    Open Navigation
+    Click Text                          ${AVENGERS_TEXT}
+    Wait Until Element Is Visible       ${TOOLBAR_TILE} 
+    Element Text Should Be              ${TOOLBAR_TILE}    ${AVENGERS_TEXT}  
+    Wait Until Page Contains            ${AVENGERS_TEXT} 
+    Wait Until Page Contains            ${LISTA_AVENGERS_TEXT}    
+    Click Text                          ${LISTA_AVENGERS_TEXT} 
+    Wait Until Page Contains            ${LISTA_AVENGERS_TEXT}      
