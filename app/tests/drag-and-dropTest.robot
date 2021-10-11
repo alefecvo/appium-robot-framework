@@ -10,4 +10,4 @@ Test Teardown     Close Session
 Deve realizar drag and drop do Hulk para topo
     Dado que acesso a tela Swipe
     Quando realizar drag and drop do Hulk
-    # Então será exibido o Hulk no topo
+    Então será exibido o Hulk no topo

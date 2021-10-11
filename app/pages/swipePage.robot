@@ -23,6 +23,9 @@ Click Button Excluir
     Sleep    3
 
 
-Drag and Drop Avengers
+Drag And Drop Avengers
     Drag And Drop         	io.qaninja.android.twp:id/drag_handle        3        0
-    Sleep    3
+
+
+Wait Drag And Drop 
+    Sleep    5

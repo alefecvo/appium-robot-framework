@@ -185,6 +185,20 @@ robot -d ./logs app/tests/checkboxTest.robot
 robot -d ./logs -i long  app/tests/buttonTest.robot
 ```
 
+```bash
+robot -d ./logs -i long  app/tests/spinnerTest.robot
+```
+
+```bash
+robot -d ./logs -i long  app/tests/swiperTest.robot
+```
+
+```bash
+robot -d ./logs -i long  app/tests/drag-and-dropTest.robot
+```
+
+
+
 3. Run test with tags ("i" to include and "e" to exclude)
 
 ```bash
