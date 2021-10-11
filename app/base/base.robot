@@ -1,8 +1,8 @@
 ***Settings***
 
 Library           AppiumLibrary
-
 Resource          helpers.robot
+Library           ../../resources/libs/extend.py
 
 
 *** Variables ***

@@ -1,6 +1,7 @@
 ***Settings***
 
 Library           AppiumLibrary
+Resource          ../../app/base/base.robot
 
 *** Variables ***
 
@@ -21,3 +22,7 @@ Click Button Excluir
     Click Element                   ${EXCLUIR_BUTTON}
     Sleep    3
 
+
+Drag and Drop Avengers
+    Drag And Drop         	io.qaninja.android.twp:id/drag_handle        3        0
+    Sleep    3

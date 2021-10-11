@@ -7,7 +7,7 @@ Test Setup        Open Session
 Test Teardown     Close Session
 
 *** Test Cases ***
-Deve remover Capitão América com swipe
+Deve realizar drag and drop do Hulk para topo
     Dado que acesso a tela Swipe
-    Quando realizar swipe no Capitão América
-    # Então será removido o registro Capitão América
+    Quando realizar drag and drop do Hulk
+    # Então será exibido o Hulk no topo
