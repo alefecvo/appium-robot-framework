@@ -7,8 +7,7 @@ ${MESSAGE_SHORT_BUTTON_TEXT}        Isso é um clique simples
 ${MESSAGE_LONG_BUTTON_TEXT}         CLIQUE LONGO OK
 
 *** Keywords ***
-Click In Short Click Button
-    Sleep    2000                
+Click In Short Click Button              
     Click Element                        id=io.qaninja.android.twp:id/short_click    
 
 Check Screen Text Short Click Button
